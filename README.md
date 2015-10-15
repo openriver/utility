@@ -1,7 +1,7 @@
 # utility
-This repository contains *example* utility data for a *fictitious* muncipality, Open River, PEI. 
+This repository contains **example** utility data for a **fictitious** muncipality, Open River, PEI. 
 
-This is *mock data* to serve as an *illustration*. 
+This is **mock data** to serve as an *illustration*.
 
 # Notes
 * This example is modeled on a repo by the [City of Chicago](https://github.com/chicago). The license used is the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
