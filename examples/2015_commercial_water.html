@@ -1,0 +1,55 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('visualization', '1.1', {packages: ['line']});
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Quarter');
+      data.addColumn('number', 'Acme Inc.');
+      data.addColumn('number', 'Example Co.');
+      data.addColumn('number', 'Test Inc.');
+      data.addColumn('number', 'Mock Associates');
+      data.addColumn('number', 'Foo Co.');
+      data.addColumn('number', '555-1212 Inc.');
+      data.addColumn('number', 'Hydro Co.');
+
+      data.addRows([
+        [1,  4971, 1964, 4526, 4771, 1792, 2899, 2817],
+        [2,  4248, 3196, 1027, 4909, 4627, 1620, 4180],
+        [3,  3740, 3801, 2906, 4684, 3195, 2230, 1455],
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Example Data for Water Usage in Open River 2015',
+          subtitle: 'in cubic metres (m3)',
+        },
+        axes: {
+            y: {
+                all: {
+                    range: {
+                        max: 8000,
+                        min: 0
+                    }
+                }
+            }
+        },
+        width: 900,
+        height: 700
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="linechart_material"></div>
+</body>
+</html>
+
